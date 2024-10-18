@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import featureReducer from './featureSlice'; // Import your slice
+import featureReducer from './featureSlice'; 
 
 const store = configureStore({
   reducer: {
-    yourSlice: featureReducer, // Add your slice reducer here
+    yourSlice: featureReducer, 
   },
 });
 
