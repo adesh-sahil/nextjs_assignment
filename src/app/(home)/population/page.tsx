@@ -62,7 +62,7 @@ const PopulationPage = () => {
     } else if (selectedOption === "Life Expectancy") {
       return `${tick} yrs`;
     } else {
-      return tick;
+      return tick.toString(); 
     }
   };
 

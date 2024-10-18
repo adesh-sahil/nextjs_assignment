@@ -100,7 +100,7 @@ const Home = () => {
                   return `${(tick / 1e9).toFixed(1)}B`;
                 }}
               />
-              <Tooltip formatter={(value) => `${(value / 1e9).toFixed(2)}B`} />
+              <Tooltip formatter={(value) => (typeof value === 'number' ? `${(value / 1e9).toFixed(2)}B` : 'N/A')} />
               <Area
                 type="monotone"
                 dataKey="value"

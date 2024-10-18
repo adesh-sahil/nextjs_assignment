@@ -159,7 +159,13 @@ const populationSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchHomePageData.fulfilled, (state, action: PayloadAction<PopulationState>) => {
+      .addCase(fetchHomePageData.fulfilled, (state, action: PayloadAction<{
+        totalPopulation: number | null;
+        changeInPopulation: number | null;
+        lifeExpectancy: number | null;
+        averageDensity: number | null;
+        populationData: PopulationData[];
+      }>) => {
         state.loading = false;
         state.totalPopulation = action.payload.totalPopulation;
         state.changeInPopulation = action.payload.changeInPopulation;
