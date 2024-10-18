@@ -39,7 +39,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-semibold mb-4">Security</h3>
             <p>
               Security is at the forefront of everything we do. We are committed
-              to providing safe, resilient systems to protect users' financial
+              to providing safe, resilient systems to protect users&apos; financial
               data.
             </p>
           </div>
